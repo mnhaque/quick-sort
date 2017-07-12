@@ -5,11 +5,9 @@ function quickSort(input) {
     {
         return;
     }
-    if(input && input.length==0){
+    if(input && input.length==0 || input.length ==1){
         return input;
-    } else if(input.length ==1){
-        return input;
-    }
+    } 
     if(input.every(function(element){return isNaN(element)})){
         return input.sort();
     }
